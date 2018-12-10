@@ -28,10 +28,10 @@ section.side-bar
   min-height: 100vh
   border-right: 1px solid $neutral
   .logo
+    height: $header-height - 1
     @include flex
     justify-content: center
     border-bottom: 1px solid $neutral
-    padding: $space/2
     h5
       font-size: 1.5rem
 
