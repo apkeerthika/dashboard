@@ -1,15 +1,15 @@
 <template lang="pug">
 .page
-  app-header
+  dash-board
 </template>
 
 
 <script>
-import AppHeader from '~/components/AppHeader.vue'
+import DashBoard from '~/components/DashBoard.vue'
 
 export default {
   components: {
-    AppHeader
+    DashBoard
   }
 }
 </script>
