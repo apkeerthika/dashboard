@@ -1,0 +1,72 @@
+html
+  font-size: $font-size
+  -ms-text-size-adjust: 100%
+  -webkit-text-size-adjust: 100%
+  -moz-osx-font-smoothing: grayscale
+  -webkit-font-smoothing: antialiased
+  box-sizing: border-box
+  font-family: $paragraph-font
+*,
+*:before,
+*:after
+  box-sizing: border-box
+  margin: 0
+
+p, span, a, button
+  font-family: $font
+
+h1, h2, h3, h4, h5, h6
+  margin-top: $space
+  line-height: 1.5
+  &:first-child
+    margin-top: 0
+
+h1, h2, h3
+  font-family: $heading-font
+  font-weight: $heading-font-weight
+  line-height: $heading-line-height
+
+h4, h5, h6
+  font-family: $sub-heading-font
+  font-weight: $sub-heading-font-weight
+  line-height: $sub-heading-line-height
+
+h1, .h1
+  font-size: 3.5rem
+  font-weight: 700
+  text-transform: uppercase
+  margin: 1rem 0
+
+h2, .h2
+  font-size: 2rem
+
+h3, .h3
+  font-size: 1.5rem
+
+h4, .h4
+  font-size: 1.25rem
+
+h5, .h5
+  font-size: 1rem
+  font-weight: 600
+
+h6, .h6
+  font-size: 1rem
+
+a
+  font-family: $action-font
+  font-weight: $action-font-weight
+  line-height: $action-line-height
+  text-decoration: none
+  color: $bethegame-dark-blue
+  &:visited
+    color: $bethegame-dark-blue
+
+p
+  font-family: $paragraph-font
+  line-height: $paragraph-line-height
+  font-weight: $paragraph-font-weight
+
+span
+  font-size: 1rem
+  font-weight: 400
