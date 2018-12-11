@@ -29,7 +29,7 @@ export default {
 
 //layout
 section.app-header
-  border-bottom: 1px solid $neutral
+  background: $white
   .container
     @include spread
     // padding-left: 0

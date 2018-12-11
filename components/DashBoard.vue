@@ -5,18 +5,21 @@ section.dashboard
   main
     app-header
     total-visit
+    location
 </template>
 
 <script>
 import SideBar from './SideBar'
 import AppHeader from './AppHeader'
 import TotalVisit from './TotalVisit'
+import Location from './Location'
 
 export default {
   components: {
     SideBar,
     AppHeader,
-    TotalVisit
+    TotalVisit,
+    Location
   }
 }
 </script>
@@ -28,9 +31,8 @@ section.dashboard
   .container
     @include flex
     align-items: flex-start
-    padding-left: 0
+    // padding-left: 0
     aside
-      background: $white
     main
       flex: 1
 </style>

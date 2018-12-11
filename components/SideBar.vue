@@ -48,7 +48,7 @@ section.side-bar
       @include flex
       justify-content: flex-start
       padding: $space $space*1.5
-      height: 6rem
+      height: 5rem
       img
         width: 2rem
       span

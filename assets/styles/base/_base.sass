@@ -11,13 +11,13 @@ ul
   @include reset
 
 .page
+  background-color: $dash-dark-grey
   // padding-top: $header-height
   section
     .container
       // min-height: 50rem
-      background: $white
       max-width: $page-width
-      padding-left: $space*6
+      padding-left: $space*7
       padding-right: $space*1.5
       color: #313435
       @media (max-width: $page-width)
@@ -26,15 +26,3 @@ ul
 
 img
   max-width: 100%
-
-.page-title
-  padding: $space
-  margin: $space*2
-  text-align: center
-  position: relative
-  &:after
-    content: " "
-    background: $text-color
-    height: 5px
-    width: 3rem
-    @include absolute-s

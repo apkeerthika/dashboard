@@ -51,14 +51,15 @@ export default {
 @import 'assets/styles/includes'
 
 section.total-visit
+  padding-top: $space
   .container
     @include flex
-    background: $white
     margin-left: $space*1.5
     .visits
       border: 1px solid rgba($black, 0.1)
-      width: 25%
+      background: $white
       margin: $space
+      width: 25%
       .visit
         padding: $space
 
