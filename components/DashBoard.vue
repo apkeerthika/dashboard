@@ -5,16 +5,19 @@ section.dashboard
       side-bar
     main
       app-header
+      total-visit
 </template>
 
 <script>
 import SideBar from './SideBar'
 import AppHeader from './AppHeader'
+import TotalVisit from './TotalVisit'
 
 export default {
   components: {
     SideBar,
-    AppHeader
+    AppHeader,
+    TotalVisit
   }
 }
 </script>
