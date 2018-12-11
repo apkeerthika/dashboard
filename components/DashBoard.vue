@@ -6,6 +6,7 @@ section.dashboard
     app-header
     total-visit
     location
+    monthly-stats
 </template>
 
 <script>
@@ -13,13 +14,15 @@ import SideBar from './SideBar'
 import AppHeader from './AppHeader'
 import TotalVisit from './TotalVisit'
 import Location from './Location'
+import MonthlyStats from './MonthlyStats'
 
 export default {
   components: {
     SideBar,
     AppHeader,
     TotalVisit,
-    Location
+    Location,
+    MonthlyStats
   }
 }
 </script>

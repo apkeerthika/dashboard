@@ -4,6 +4,7 @@ section.location
     .locationar
       .map
         h6 Site visits
+        img(src="https://media.istockphoto.com/photos/world-map-picture-id541303210?k=6&m=541303210&s=612x612&w=0&h=xVNsz2cyBmD7Fsy6aZuyEihHN_sZx21km6abodKHG3s=")
       .progress
         ul
           li(v-for="v, i in visitors", :key="i")
@@ -90,6 +91,11 @@ section.location
     .map
       width: 60%
       padding: $space
+      img
+        width: 60%
+        height: 100%
+        text-align: center
+        margin: 0 auto
       h6
         // text-align: center
     .progress
