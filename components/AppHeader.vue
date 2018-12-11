@@ -2,11 +2,11 @@
 section.app-header
   header
     .primary
-      img(src="/images/menu.png")
-    .secondary
       .notification
         img(src="/images/notification.png")
         img.email(src="/images/inbox.png")
+      //- img(src="/images/menu.png")
+    .secondary
       my-profile
 
 </template>
@@ -38,13 +38,13 @@ section.app-header
 .primary
   img
     width: 2rem
+  .notification
+    margin: $space*2
 
 //secondary
 .secondary
   @include flex
-  .notification
-    margin: $space*1.5
-    img.email
-      width: 2rem
-      margin-left: $space
+  img.email
+    width: 2rem
+    margin-left: $space
 </style>

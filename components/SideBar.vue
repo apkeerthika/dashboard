@@ -30,7 +30,7 @@ section.side-bar
   .logo
     height: $header-height - 1
     @include flex
-    justify-content: center
+    justify-content: flex-start
     border-bottom: 1px solid $neutral
     h5
       font-size: 1.5rem
@@ -38,12 +38,14 @@ section.side-bar
 
 //Navigation
 section.side-bar
+  width: 7rem
+  cursor: pointer
   ul.navigation
     line-height: 1.5rem
     li
-      margin: $space*2 $space*4
-      display: block
-      color: #72777a
+      @include flex
+      justify-content: flex-start
+      padding: $space $space*1.5
       img
         width: 2rem
       span
@@ -53,4 +55,18 @@ section.side-bar
         cursor: pointer
         &:hover
           color: $black
+
+//interaction
+h5, span
+  display: none
+
+section.side-bar
+  &:hover
+    width: 20rem
+    transition: all .3s ease
+    z-index: 1000
+    li
+      margin: $space/2
+    h5, span
+      display: block
 </style>

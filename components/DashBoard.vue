@@ -29,7 +29,6 @@ section.dashboard
     padding-left: 0
     aside
       background: $white
-      width: 25%
     main
       flex: 1
 </style>
