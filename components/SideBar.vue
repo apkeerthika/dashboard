@@ -51,8 +51,10 @@ section.side-bar
       span
         text-align: center
         margin-left: $space*2
-        font-size: 1.5rem
+        font-size: 1rem
+        font-weight: 600
         cursor: pointer
+        color: #72777a
         &:hover
           color: $black
 
@@ -63,7 +65,7 @@ h5, span
 section.side-bar
   &:hover
     width: 20rem
-    transition: all .3s ease
+    transition: all .4s
     z-index: 1000
     li
       margin: $space/2
