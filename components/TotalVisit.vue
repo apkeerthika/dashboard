@@ -1,12 +1,13 @@
 <template lang="pug">
 section.total-visit
-  .visits(v-for="v, i in visits", :key="i")
-    .visit
-      .visit-name
-        h6 {{ v.label }}
-      .visit-percentage
-        img(:src="v.image")
-        span(:class="v.class") {{ v.percentage }}
+  .container
+    .visits(v-for="v, i in visits", :key="i")
+      .visit
+        .visit-name
+          h6 {{ v.label }}
+        .visit-percentage
+          img(:src="v.image")
+          span(:class="v.class") {{ v.percentage }}
 
 </template>
 
@@ -50,15 +51,16 @@ export default {
 @import 'assets/styles/includes'
 
 section.total-visit
-  @include flex
-  background: $white
-  padding: $space
-  .visits
-    border: 1px solid rgba($black, 0.1)
-    width: 25%
-    margin: $space
-    .visit
-      padding: $space
+  .container
+    @include flex
+    background: $white
+    margin-left: $space*1.5
+    .visits
+      border: 1px solid rgba($black, 0.1)
+      width: 25%
+      margin: $space
+      .visit
+        padding: $space
 
 
 //rate

@@ -1,6 +1,6 @@
 <template lang="pug">
 section.app-header
-  header
+  .container
     .primary
       .notification
         img(src="/images/notification.png")
@@ -30,10 +30,10 @@ export default {
 //layout
 section.app-header
   border-bottom: 1px solid $neutral
-  header
+  .container
     @include spread
-    height: $header-height - 1
-    padding: $space
+    // padding-left: 0
+    // height: $header-height - 1
     .primary
     .secondary
 
@@ -68,4 +68,5 @@ section.app-header
 .email
   > span
     top: -0.2rem
+
 </style>

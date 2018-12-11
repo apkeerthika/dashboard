@@ -1,11 +1,10 @@
 <template lang="pug">
 section.dashboard
-  .container
-    aside
-      side-bar
-    main
-      app-header
-      total-visit
+  aside
+    side-bar
+  main
+    app-header
+    total-visit
 </template>
 
 <script>

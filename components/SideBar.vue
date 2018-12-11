@@ -26,12 +26,13 @@ export default {
 
 section.side-bar
   min-height: 100vh
-  border-right: 1px solid $neutral
+  border-right: 1px solid rgba($black, 0.2)
+  background: $neutral
   .logo
     height: $header-height - 1
     @include flex
     justify-content: flex-start
-    border-bottom: 1px solid $neutral
+    border-bottom: 1px solid rgba($black, 0.2)
     h5
       font-size: 1.5rem
 
@@ -39,6 +40,7 @@ section.side-bar
 //Navigation
 section.side-bar
   width: 7rem
+  @include fixed-w
   cursor: pointer
   ul.navigation
     line-height: 1.5rem
@@ -46,6 +48,7 @@ section.side-bar
       @include flex
       justify-content: flex-start
       padding: $space $space*1.5
+      height: 6rem
       img
         width: 2rem
       span
@@ -65,10 +68,10 @@ h5, span
 section.side-bar
   &:hover
     width: 20rem
-    transition: all .4s
-    z-index: 1000
+    transition: all .4s ease
+    z-index: 2000
     li
-      margin: $space/2
+      // margin: $space/2
     h5, span
       display: block
 </style>

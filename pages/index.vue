@@ -14,4 +14,10 @@ export default {
 }
 </script>
 
+<style lang="sass" scoped>
+@import 'assets/styles/includes'
+
+.page
+  background: $neutral
+</style>
 
