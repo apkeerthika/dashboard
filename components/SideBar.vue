@@ -39,18 +39,18 @@ section.side-bar
 
 //Navigation
 section.side-bar
-  width: 7rem
+  width: 5rem
   @include fixed-w
   cursor: pointer
   ul.navigation
-    line-height: 1.5rem
+    line-height: 1rem
     li
       @include flex
       justify-content: flex-start
       padding: $space $space*1.5
-      height: 5rem
+      height: 3rem
       img
-        width: 2rem
+        width: 1.5rem
       span
         text-align: center
         margin-left: $space*2

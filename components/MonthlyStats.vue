@@ -35,5 +35,5 @@ section.monthly-stats
 .stats
   img
     width: 100%
-    height: 100%
+    height: 80%
 </style>

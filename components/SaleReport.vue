@@ -25,9 +25,13 @@ section.sale-report
                 span {{ r.date }}
               td
                 span {{ r.price }}
+
+    weather.weather
+
 </template>
 
 <script>
+import Weather from './Weather'
 export default {
   data () {
     return {
@@ -97,6 +101,9 @@ export default {
         },
       ]
     }
+  },
+  components: {
+    Weather
   }
 }
 </script>
@@ -108,11 +115,12 @@ section.sale-report
   padding-top: $space*3
   .container
     @include flex
+    align-items: flex-start
     padding-left: $space*9.5
     .report
       width: 50%
-
-
+    weather.weather
+      flex: 1
 //total-report
 .report
   position: relative
@@ -148,13 +156,12 @@ section.sale-report
       letter-spacing: 1px
       font-weight: 600
       font-size: 1.2rem
-      padding: $space
+      padding: $space/2
   tr
     td
-      padding: $space*2 0
+      padding: $space/2
       border-bottom: 1px solid rgba($black, .0625)
       span
-        // padding-left: $space
         text-align: left
         color: #72777a
         letter-spacing: 1px

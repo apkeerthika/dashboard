@@ -92,7 +92,7 @@ section.location
       width: 60%
       padding: $space
       img
-        width: 60%
+        width: 100%
         height: 100%
         text-align: center
         margin: 0 auto
